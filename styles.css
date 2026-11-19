@@ -72,6 +72,39 @@ body {
   color: var(--accent);
 }
 
+.card + .card {
+  margin-top: 24px;
+}
+
+.card__note {
+  margin-top: -8px;
+  font-size: 0.875rem;
+  color: var(--machine-grey);
+}
+
+.specs {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs th,
+.specs td {
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e5e7;
+  text-align: left;
+}
+
+.specs th {
+  width: 50%;
+  font-weight: 500;
+  color: var(--machine-grey);
+}
+
+.specs tr:last-child th,
+.specs tr:last-child td {
+  border-bottom: none;
+}
+
 .footer {
   padding: 24px 16px;
   text-align: center;
