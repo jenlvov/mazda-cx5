@@ -26,6 +26,18 @@ body {
   background: linear-gradient(135deg, var(--machine-grey) 0%, var(--machine-grey-light) 50%, var(--machine-grey) 100%);
 }
 
+.hero {
+  transition: background 0.4s;
+}
+
+.hero--light {
+  color: var(--text);
+}
+
+.hero--light .swatch {
+  border-color: var(--text);
+}
+
 .hero__eyebrow {
   margin: 0;
   letter-spacing: 0.2em;
