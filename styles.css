@@ -117,6 +117,12 @@ body {
   border-bottom: none;
 }
 
+.price {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
