@@ -5,6 +5,19 @@
   --text: #1d1f21;
   --card: #ffffff;
   --accent: #b3001b;
+  --border: #e3e5e7;
+  --muted: var(--machine-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121314;
+    --text: #e8eaec;
+    --card: #1e2022;
+    --accent: #ff4d5e;
+    --border: #2e3134;
+    --muted: #9a9ea2;
+  }
 }
 
 * {
@@ -79,6 +92,16 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+@media (prefers-color-scheme: dark) {
+  .card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .gallery__swatch {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
 .card h2 {
   margin-top: 0;
   color: var(--accent);
@@ -91,7 +114,7 @@ body {
 .card__note {
   margin-top: -8px;
   font-size: 0.875rem;
-  color: var(--machine-grey);
+  color: var(--muted);
 }
 
 .specs {
@@ -102,14 +125,14 @@ body {
 .specs th,
 .specs td {
   padding: 10px 0;
-  border-bottom: 1px solid #e3e5e7;
+  border-bottom: 1px solid var(--border);
   text-align: left;
 }
 
 .specs th {
   width: 50%;
   font-weight: 500;
-  color: var(--machine-grey);
+  color: var(--muted);
 }
 
 .specs tr:last-child th,
@@ -174,5 +197,9 @@ body {
   padding: 24px 16px;
   text-align: center;
   font-size: 0.875rem;
-  color: var(--machine-grey);
+  color: var(--muted);
+}
+
+.footer a {
+  color: inherit;
 }
