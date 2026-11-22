@@ -5,6 +5,19 @@
   --text: #1d1f21;
   --card: #ffffff;
   --accent: #b3001b;
+  --border: #e3e5e7;
+  --muted: var(--machine-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121314;
+    --text: #e8eaec;
+    --card: #1e2022;
+    --accent: #8a0015;
+    --border: #2e3134;
+    --muted: #9a9ea2;
+  }
 }
 
 * {
@@ -102,7 +115,7 @@ body {
 .specs th,
 .specs td {
   padding: 10px 0;
-  border-bottom: 1px solid #e3e5e7;
+  border-bottom: 1px solid var(--boder);
   text-align: left;
 }
 
