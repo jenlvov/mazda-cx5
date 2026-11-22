@@ -125,7 +125,7 @@ body {
 .specs th,
 .specs td {
   padding: 10px 0;
-  border-bottom: 1px solid var(--boder);
+  border-bottom: 1px solid var(--border);
   text-align: left;
 }
 
